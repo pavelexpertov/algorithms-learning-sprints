@@ -37,3 +37,8 @@ print("Predict with value 5:", one_reg.predict([[5]]))
 # <markdown>
 Basically, from few values, the linear model is predicting beyond the examples
 since the x values will always match y values.
+The reason this happens is because the weights (i.e. the coefficients of x in y=mx+c)
+affects the line direction.
+In the first example, the features and predictions are represented as a 3d model x feature for x,
+y feature for y and prediction for z (the latters being axis). Then I think the weights
+are 0.5 and not 1.0 is simply because the weights affects the point position in terms of 3rd dimension.
